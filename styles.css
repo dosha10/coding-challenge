@@ -1,0 +1,82 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+
+:root{
+    /*colors*/
+    --first-color: #498deb;
+    --accent-color: #00e5c0;
+    --text-color: #fefefe;
+    --dark-color: #212122
+
+    /*margins*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2.5rem;
+
+     /*z-index*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*base*/
+*,::before,*::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(assets/images/landing2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+ul, a, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.bd-container {
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+.l-header { 
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1024px;
+   
+}
+
+.logo, .hamburger {
+    width: 45px;
+}
+
+.nav__logo {
+    font-size: 30px;
+    color: var(--text-color);
+  font-weight: bold;
+}
